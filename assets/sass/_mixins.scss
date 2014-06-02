@@ -1,0 +1,17 @@
+/* Mixins */
+
+$prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
+@mixin prefix($property, $value) {
+    @each $prefix in $prefixes {
+        #{$prefix}#{$property}: #{$value};
+    }
+}
+
+
+/* Extends */
+
+%image-replacement {
+    text-indent: -1000%;
+    white-space: nowrap;
+    overflow: hidden;
+}
