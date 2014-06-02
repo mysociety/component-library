@@ -1,5 +1,4 @@
 /* Mixins */
-
 $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
 @mixin prefix($property, $value) {
     @each $prefix in $prefixes {
@@ -9,7 +8,6 @@ $prefixes: ("-webkit-","-moz-", "-o-", "-ms-", "");
 
 
 /* Extends */
-
 %image-replacement {
     text-indent: -1000%;
     white-space: nowrap;
